@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" display="none">
+
+	<symbol id='next' viewBox="0 0 13 21">
+		<path d="M2 2L11 10.5L2 19" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+	</symbol>
+
+	<symbol id='prev' viewBox="0 0 13 21">
+		<path d="M11 19L2 10.5L11 2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+	</symbol>
+
+</svg>

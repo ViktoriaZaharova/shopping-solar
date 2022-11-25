@@ -1,0 +1,331 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: #000
+
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  width: fit-content
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 15px
+  box-sizing: border-box
+  font-family: 'Montserrat', sans-serif
+  border: 1px solid #FD5200
+  border-radius: 10px
+  width: 100%
+  height: 54px
+  background: transparent
+  color: #000
+
+  &::placeholder
+    color: #000
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+label
+  display: block
+  width: 100%
+  margin: 0 0 13px
+
+  &:last-child
+    margin: 0
+
+textarea
+  resize: none
+  padding: 12px 17px
+  height: 103px
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: 'Montserrat', sans-serif
+  padding: 0
+  margin: 0
+  border: none
+  border-radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  border-radius: 5px
+  padding: 10px 20px
+  font-size: 18px
+  line-height: 22px
+  font-weight: 500
+
+.btn-white
+  background: #fff
+  color: #FD5200
+
+  &:hover
+    background: #FFCB05
+    color: #000
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+strong, b
+  font-weight: bold
+  display: inline-block
+
+ul, ol
+  padding: 0 0 0 20px
+
+.my-ul
+  list-style: none
+  padding: 0
+
+.color-yellow
+  color: #FFCB05
+
+.container
+  max-width: 1450px
+  padding: 0 15px
+
+.row
+  margin: 0 -15px
+
+  > *
+    padding: 0 15px
+
+h1
+  font-size: 64px
+  font-weight: bold
+  text-transform: uppercase
+  margin: 0 0 29px
+  max-width: 826px
+
+h2
+  width: 100%
+  margin: 0 0 15px
+  color: #FD5200
+  text-transform: uppercase
+  font-size: 48px
+  line-height: 52px
+  font-weight: bold
+
+.box-text
+  line-height: 33px
+  font-size: 27px
+
+.mb-35
+  margin-bottom: 35px
+
+.mb-30
+  margin-bottom: 30px
+
+.mb-60
+  margin-bottom: 60px
+
+.nav-tabs
+  border: none
+  font-size: 18px
+
+  .nav-item
+    margin: 0 40px 0 0
+
+    &:last-child
+      margin: 0
+
+  .nav-link
+    border: 1px solid #FD5200
+    border-radius: 10px
+    padding: 16px 26px
+    margin: 0
+    color: #FD5200
+
+    &:hover
+      background: #FD5200
+      color: #fff
+
+    &.active
+      color: #fff
+      background: linear-gradient(135.84deg, #FD5200 0%, #F3991F 107.91%)
+      border-color: transparent
+      font-weight: bold
+
+.slick-slider
+  width: 100%
+
+.slick-slide
+  outline: none
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  z-index: 1
+  opacity: 1
+  background: transparent
+  width: 54px
+  height: 54px
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: none
+  stroke: #FD5200
+  border: 3px solid #FD5200
+  border-radius: 50%
+
+  &:hover, &:focus
+    background: #FFCB05
+    stroke: #000
+    border-color: #FFCB05
+
+  svg
+    width: 9px
+    height: 17px
+
+.slick-prev
+  left: 0
+
+.slick-next
+  right: 0
+
+.slick-dots
+  padding: 0
+  list-style: none
+  position: relative
+  bottom: 0
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 26px 0 0
+
+  li
+    cursor: pointer
+    transition: .3s ease
+    border: 1px solid #FFCB05
+    border-radius: 50%
+    width: 20px
+    height: 20px
+    margin: 0 16px 0 0
+
+    &:last-child
+      margin: 0
+
+    button
+      display: none
+
+    &.slick-active
+      background: #FFCB05
+
+.link-light-orange
+  color: #F3991F
+
+  &:hover
+    color: #FD5200
+
+.bg-orange
+  background: linear-gradient(135.84deg, #FD5200 0%, #F3991F 107.91%)
+
+.tab-content
+  width: 100%
+
+.tab-pane
+  width: 100%
+
+.radio
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  flex-wrap: wrap
+  position: relative
+  transition: .3s ease
+  cursor: pointer
+  color: #FD5200
+  font-size: 18px
+
+  input
+    position: absolute
+    left: 0
+    top: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    background: #fff
+  input:checked
+    background: linear-gradient(135.84deg, #FD5200 0%, #F3991F 107.91%)
+    border-color: transparent
+    + .radio-text
+      font-weight: bold
+      color: #fff
