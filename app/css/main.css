@@ -264,11 +264,9 @@
     width: 359px;
     left: 0;
     top: 0;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0)));
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
-    z-index: -1;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: -1; }
   .sales-box .date {
     font-size: 20px; }
   .sales-box h3 {
@@ -327,6 +325,10 @@
     margin: 0 0 30px; }
   .entertainment-wrapper__body {
     width: 100%; }
+  .entertainment-wrapper h3 {
+    margin: 0 0 38px;
+    font-size: 32px;
+    font-weight: 500; }
 
 .nav-dates {
   white-space: nowrap;
@@ -415,6 +417,7 @@
   padding: 0 83px; }
   .entertainment-kids-images__img {
     width: 100%;
+    height: 814px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -426,6 +429,115 @@
             justify-content: center;
     border-radius: 20px;
     overflow: hidden; }
+    .entertainment-kids-images__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+.shops {
+  padding: 76px 0 46px;
+  margin: 0 0 58px; }
+  .shops h2 {
+    margin: 0;
+    color: #fff; }
+
+.btn-scheme {
+  margin: 0 0 0 auto; }
+
+.shop-card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 17px 0 0;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .shop-card__body {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #FFCB05; }
+  .shop-card__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: #F3991F;
+    padding: 15px 20px;
+    font-weight: bold;
+    margin: auto 0 0; }
+  .shop-card__img {
+    width: 100%;
+    height: 220px;
+    border-radius: 5px;
+    position: relative; }
+    .shop-card__img img {
+      border-radius: 5px;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .shop-card__logo {
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px; }
+  .shop-card__head {
+    margin: 13px 0 12px;
+    padding: 0 70px 0 0;
+    width: 100%;
+    color: #F3991F; }
+  .shop-card__title {
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 20px;
+    font-weight: 800; }
+  .shop-card .box-text {
+    color: #606060;
+    line-height: 17px;
+    font-size: 14px;
+    max-width: 235px; }
+
+.btn-toggle {
+  margin: 40px auto 0; }
+  .btn-toggle img {
+    margin: 0 0 0 10px; }
+
+.shops-maps {
+  display: none; }
+  .shops-maps__scheme {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .shops-maps__scheme img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
 
 .get-there h2 {
   margin: 0 0 47px; }
@@ -470,6 +582,8 @@
     margin: 0 20px 30px; }
   .there-slider .slick-disabled {
     opacity: 0; }
+  .there-slider .slick-arrow {
+    top: 35%; }
 
 .there-box {
   max-width: 268px;

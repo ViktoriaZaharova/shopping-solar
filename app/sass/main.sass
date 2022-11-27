@@ -227,9 +227,9 @@
     width: 359px
     left: 0
     top: 0
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%)
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%)
     z-index: -1
-    transform: rotate(90deg)
+    //transform: rotate(90deg)
   .date
     font-size: 20px
   h3
@@ -285,6 +285,10 @@
     margin: 0 0 30px
   &__body
     width: 100%
+  h3
+    margin: 0 0 38px
+    font-size: 32px
+    font-weight: 500
 
 
 .nav-dates
@@ -359,13 +363,104 @@
   padding: 0 83px
   &__img
     width: 100%
+    height: 814px
     display: flex
     align-items: center
     justify-content: center
     border-radius: 20px
     overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
 
 // entertainment end
+
+//shops
+.shops
+  padding: 76px 0 46px
+  margin: 0 0 58px
+  h2
+    margin: 0
+    color: #fff
+
+.btn-scheme
+  margin: 0 0 0 auto
+
+.shop-card
+  width: 100%
+  height: 100%
+  background: #fff
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15)
+  border-radius: 10px
+  padding: 17px 0 0
+  font-size: 14px
+  display: flex
+  flex-direction: column
+  &__body
+    padding: 0 20px 20px
+    border-bottom: 1px solid #FFCB05
+  &__footer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    color: #F3991F
+    padding: 15px 20px
+    font-weight: bold
+    margin: auto 0 0
+  &__img
+    width: 100%
+    height: 220px
+    border-radius: 5px
+    position: relative
+    img
+      border-radius: 5px
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__logo
+    position: absolute
+    right: 0
+    bottom: -35px
+    border-radius: 5px
+    width: 70px
+    height: 70px
+  &__head
+    margin: 13px 0 12px
+    padding: 0 70px 0 0
+    width: 100%
+    color: #F3991F
+  &__title
+    margin: 0 0 8px
+    text-transform: uppercase
+    color: #000
+    font-size: 20px
+    font-weight: 800
+  .box-text
+    color: #606060
+    line-height: 17px
+    font-size: 14px
+    max-width: 235px
+
+.btn-toggle
+  margin: 40px auto 0
+  img
+    margin: 0 0 0 10px
+
+.shops-maps
+  display: none
+  &__scheme
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+//shops end
 
 //get-there
 .get-there
@@ -403,6 +498,8 @@
     margin: 0 20px 30px
   .slick-disabled
     opacity: 0
+  .slick-arrow
+    top: 35%
 
 .there-box
   max-width: 268px

@@ -3,53 +3,466 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1400px)
+  .menu
+    font-size: 16px
+    margin: 0 20px
 
+  .schedule
+    margin: 0 0 0 20px
+    font-size: 14px
+
+  .btn
+    font-size: 16px
+
+  .address
+    margin: 0 20px 0 0
+
+  .about-images
+    min-width: 450px
+
+  .about
+    margin: 70px 0
+
+@media only screen and (max-width: 1300px)
+  h1
+    font-size: 54px
+    max-width: 700px
+
+  .home-item
+    ul
+      font-size: 28px
+
+  header
+    .menu
+      font-size: 14px
+
+  .logo
+    max-width: 160px
+
+@media only screen and (max-width: 1199px)
+  header
+    .nav-menu
+      display: none
+
+    &:before
+      width: calc(50% + 80px)
+
+  .btn-burger
+    margin: 0 40px 0 auto
+
+  .navigation-options-link
+    margin: 0 30px 30px 0
+
+  .home-description
+    font-size: 20px
+    margin: 0 0 50px
+
+  .box-text
+    font-size: 24px
+    line-height: normal
+
+  .about-content
+    .box-text
+      max-width: 470px
+
+  .about-images
+    min-width: 350px
+
+  .about-images__img
+    height: 270px
+    &:first-child
+      left: -100px
+
+  .footer-schedule
+    font-size: 16px
+
+  .menu-shopping li, .menu-footer li
+    margin: 0 0 20px
+
+  footer
+    font-size: 16px
+    .btn-maps
+      margin: 20px auto 0
+
+  .entertainment
+    margin: 60px 0
+    h2
+      margin: 0 0 25px
+
+  .there-slider
+    max-width: none
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 1100px)
+  header
+    &:before
+      display: none
 
+    .address, .schedule
+      color: #FD5200
+
+    .btn-white
+      background: #FD5200
+      color: #fff
+
+    .logo
+      margin: 0 auto 0 0
+
+  .btn-burger
+    margin: 0 0 0 20px
+    order: 1
+
+  .home-item ul
+    font-size: 22px
+
+  h1
+    font-size: 50px
+
+
+
+@media only screen and (max-width: 991px)
+  header
+    .address, .schedule
+      display: none
+
+  .home-description
+    font-size: 20px
+
+  .events
+    .col-12
+      margin: 0 0 30px
+
+  h2
+    font-size: 40px
+    line-height: normal
+
+  .about-content
+    padding: 25px
+    .box-text
+      max-width: none
+
+  .box-text
+    font-size: 22px
+
+  .about-images
+    min-width: auto
+    width: 100%
+    display: flex
+    align-items: stretch
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 30px 0 0
+    &__img
+      max-width: 48%
+      position: relative
+      &:first-child
+        left: 0
+        top: 0
+        position: relative
+
+  .nav-dates
+    padding: 0
+    .slick-next
+      right: 20px
+
+  .posters-slider .slick-next
+    right: 20px
+
+  .entertainment-kids-content
+    max-width: none
+    margin: 0 0 30px
+
+  .entertainment-kids-images
+    width: 100%
+    padding: 0 60px
+
+  .entertainment-kids-images__img
+    height: 700px
+
+  .nav-tabs-hall .nav-item
+    margin: 0 0 20px
+
+  .entertainment-wrapper
+    h3
+      margin: 0 0 20px
+      font-size: 22px
+
+  .visitors
+    font-size: 40px
+    text-align: center
+    span
+      max-width: none
+    p
+      font-size: 100px
+      line-height: normal
+
+  .tenat-content
+    max-width: none
+    margin: 0 0 40px
+
+  .tenat-image
+    margin: 0 0 30px
+
+  .logo-company
+    margin: 0 auto
+
+  .there-slider
+    margin: 30px 0 0
+
+  .nav-tabs-there
+    flex-wrap: nowrap
+    flex-direction: row
+    align-items: flex-start
+    white-space: nowrap
+    .nav-item
+      margin: 0 10px 10px 0
+      max-width: none
+
+  .mb-60
+    margin-bottom: 40px
+
+  .maps-footer
+    max-width: none
+    margin: 30px auto 0
+
+  footer
+    .address
+      margin: 0 0 0 auto
+      justify-content: flex-end
+
+  .modal-dialog
+    .btn-close
+      display: flex
+      align-items: center
+      justify-content: center
+
+  .modal-advantages-content
+    max-width: none
+    margin: 0 0 20px
+
+  .modal-content h3
+    font-size: 30px
+    margin: 0 0 20px
+
+  .modal-advantages-image
+    height: auto
+
+  .modal-map
+    height: 500px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 767px)
+  h2
+    font-size: 30px
 
+  .box-text
+    font-size: 18px
+
+  .sales
+    h2
+      margin: 0 0 20px
+
+  .sales-box
+    min-height: 280px
+    .date
+      font-size: 18px
+    &:before
+      width: 100%
+      max-width: 300px
+    h3
+      font-size: 24px
+      margin: 10px 0 auto
+    &__description
+      font-size: 24px
+
+  .logo-kino
+    margin: 0 0 20px
+
+  .nav-tabs-hall
+    flex-direction: row
+    align-items: flex-start
+    max-width: none
+    flex-wrap: nowrap
+    overflow-y: auto
+    padding: 0 20px 0 0
+    white-space: nowrap
+    .nav-item
+      max-width: 175px
+      margin: 0 10px 20px 0
+      &:last-child
+        margin: 0 0 20px
+
+  .wrapper-content
+    padding: 20px
+
+  .entertainment-wrapper
+    padding: 20px 0 20px 20px
+    &::before
+      display: none
+
+  .nav-dates, .posters-slider
+    &:before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+      width: 140px
+      height: 100%
+      z-index: 1
+
+  .slick-arrow
+    width: 40px
+    height: 40px
+
+  .entertainment-kids-images__img
+    height: 500px
+
+  .entertainment-kids-images
+    padding: 0 50px
+
+  .slick-dots li
+    width: 16px
+    height: 16px
+
+  h1
+    font-size: 40px
+
+  .home-description
+    font-size: 16px
+    margin: 20px 0 30px
+
+  .navigation-options-link
+    font-size: 14px
+    &__icon
+      width: 80px
+      height: 80px
+
+  .shops
+    padding: 50px 0 40px
+    h2
+      margin: 0 auto 20px
+      text-align: center
+    select
+      margin: 0 auto
+
+  .btn-scheme
+    margin: 20px auto 0
+
+  .nav-tabs-there .nav-item
+    max-width: none
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+
+  .there-box h3
+    font-size: 18px
+
+  .there-slider
+    padding: 0 40px
+
+  .get-there h2
+    margin: 0 0 20px
+
+  .tenat-image
+    height: 550px
+
+  .advantages-box
+    p
+      font-size: 16px
+
+  .tenat
+    margin: 50px 0 60px
+
+  .modal-content
+    padding: 30px
+    h3
+      font-size: 24px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 576px)
+  .about-images
+    &__img
+      max-width: none
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
 
+  .about
+    margin: 50px 0
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+  .entertainment-kids-images__img
+    height: 350px
 
+  .entertainment-kids-content h3
+    font-size: 24px
 
-/*==========  Mobile First  ==========*/
+  .home-item
+    padding: 50px 0 200px
+    ul
+      font-size: 18px
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+  .tenat-image
+    height: auto
 
+  .there-slider
+    padding: 0
+    .slick-slide
+      margin: 0 10px 30px 0
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
+    &:before, &:after
+      content: ''
+      position: absolute
+      top: 0
+      height: 100%
+      width: 100px
+      z-index: 1
+    &:before
+      left: 0
+      background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+    &:after
+      right: 0
+      background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+    .slick-arrow
+      top: 45%
+      z-index: 2
 
+  .logo-company
+    max-width: 250px
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
+  .visitors
+    font-size: 34px
+    p
+      font-size: 70px
 
+  .advantages-box
+    p
+      font-size: 14px
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+  .menu-shopping
+    margin: 20px 0
 
+  .maps-footer
+    height: 300px
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  footer
+    .address
+      justify-content: center
+      margin: 10px auto 0
+    .logo
+      margin: 0 auto
+
+  .modal-map
+    height: 250px
+
+@media only screen and (max-width: 480px)
+  header
+    .btn
+      display: none
+
+  .box-text
+    font-size: 16px
+
 
