@@ -313,12 +313,15 @@
   .tenat {
     margin: 50px 0 60px; }
   .modal-content {
-    padding: 30px; }
+    padding: 40px 30px 30px; }
     .modal-content h3 {
       font-size: 24px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
+  .navigation-options-link {
+    margin: 0 0 20px;
+    width: 33.333%; }
   .about-images__img {
     max-width: none;
     margin: 0 0 30px; }
@@ -378,10 +381,18 @@
   footer .logo {
     margin: 0 auto; }
   .modal-map {
-    height: 250px; } }
+    height: 250px; }
+  .about-images__img {
+    margin: 0;
+    -webkit-filter: none;
+            filter: none; }
+  .about-images .slick-dots {
+    margin: 10px 0 0; } }
 
 @media only screen and (max-width: 480px) {
   header .btn {
     display: none; }
   .box-text {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .home {
+    padding: 81px 0 0; } }

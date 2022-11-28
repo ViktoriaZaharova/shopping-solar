@@ -92,7 +92,9 @@ footer {
     top: 20px;
     cursor: pointer;
     margin: 0;
-    display: none; }
+    width: 24px;
+    height: 24px;
+    background-size: 100%; }
 
 .modal-content {
   border: none;
