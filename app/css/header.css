@@ -48,7 +48,8 @@ header {
       color: #009746; }
       .menu li a:hover {
         color: #FD5200;
-        font-weight: bold; }
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05); }
 
 .btn-burger {
   max-width: 29px;
