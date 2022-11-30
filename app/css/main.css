@@ -115,6 +115,32 @@
   font-size: 25px;
   font-weight: 500;
   text-align: center; }
+  .home-description span {
+    display: inline-block;
+    -webkit-animation: waviy 1s infinite;
+            animation: waviy 1s infinite;
+    -webkit-animation-delay: calc(0.1s * var(--i));
+            animation-delay: calc(0.1s * var(--i)); }
+
+@-webkit-keyframes waviy {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  20% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px); } }
+
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  20% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px); } }
 
 .events {
   margin: -90px auto 0;

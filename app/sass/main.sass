@@ -5,6 +5,7 @@
 .home-slider
   .gallery-hidden
     display: none
+
   .container
     position: relative
     z-index: 2
@@ -15,9 +16,11 @@
   z-index: 1
   padding: 50px 0 279px
   color: #fff
+
   ul
     font-size: 32px
     font-weight: bold
+
   &::before
     content: ''
     position: absolute
@@ -26,6 +29,7 @@
     width: 100%
     height: 100%
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+
   &__bg
     position: absolute
     left: 0
@@ -52,11 +56,14 @@
   display: flex
   flex-direction: column
   align-items: center
+
   &:hover
     color: #FD5200
     transform: scale(1.05)
+
   &:last-child
     margin: 0
+
   &__icon
     width: 100px
     height: 100px
@@ -100,6 +107,19 @@
   font-size: 25px
   font-weight: 500
   text-align: center
+  span
+    display: inline-block
+    animation: waviy 1s infinite
+    animation-delay: calc(0.1s * var(--i))
+
+@keyframes waviy
+  0%,
+  40%,
+  100%
+    transform: translateY(0)
+  20%
+    transform: translateY(-3px)
+
 
 // home end
 
@@ -123,6 +143,7 @@
   flex-direction: column
   justify-content: flex-end
   z-index: 1
+
   h3
     margin: 0 0 19px
     font-weight: bold
@@ -139,6 +160,7 @@
     border-radius: 0px 0px 20px 20px
     transform: rotate(90deg)
     z-index: -1
+
   &__bg
     position: absolute
     width: 100%
@@ -147,6 +169,7 @@
     left: 0
     top: 0
     z-index: -2
+
   &__body
     max-width: 230px
     width: 100%
@@ -163,6 +186,7 @@
   border-radius: 20px
   padding: 25px 43px 22px
   max-width: 986px
+
   .box-text
     max-width: 575px
 
@@ -174,6 +198,7 @@
   flex-direction: column
   justify-content: flex-end
   float: right
+
   &__img
     display: flex
     align-items: center
@@ -184,10 +209,12 @@
     filter: drop-shadow(0px 24px 44px rgba(0, 0, 0, 0.1))
     border-radius: 20px
     margin: 0 0 -39px
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
     &:first-child
       margin: 0
       position: absolute
@@ -217,6 +244,7 @@
   flex-direction: column
   cursor: pointer
   transition: .3s ease
+
   &__bg
     width: 100%
     height: 100%
@@ -225,6 +253,7 @@
     z-index: -2
     left: 0
     top: 0
+
   &::before
     content: ''
     position: absolute
@@ -234,18 +263,21 @@
     top: 0
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%)
     z-index: -1
-    //transform: rotate(90deg)
+  //transform: rotate(90deg)
   .date
     font-size: 20px
+
   h3
     margin: 23px 0 auto
     text-transform: uppercase
     font-weight: bold
     font-size: 40px
+
   &__description
     font-size: 32px
     font-weight: bold
     max-width: 405px
+
   &:hover
     color: #fff
     transform: scale(1.05)
@@ -255,6 +287,7 @@
 // entertainment
 .entertainment
   margin: 118px 0 109px
+
   h2
     margin: 0 0 37px
 
@@ -276,6 +309,7 @@
   position: relative
   padding: 22px 0 39px 37px
   z-index: 1
+
   &::before
     content: ''
     position: absolute
@@ -286,11 +320,14 @@
     width: 333px
     height: 100%
     z-index: 1
+
   &__head
     width: 100%
     margin: 0 0 30px
+
   &__body
     width: 100%
+
   h3
     margin: 0 0 38px
     font-size: 32px
@@ -300,37 +337,47 @@
 .nav-dates
   white-space: nowrap
   padding: 0 20px 0 0
+
   .slick-prev
     display: none !important
+
   .slick-next
     right: -44px
+
   .slide
     margin: 0 40px 0 0
+
   .radio
     padding: 16px 26px
 
 .nav-tabs-hall
   max-width: 175px
   flex-direction: column
+
   .nav-item
     margin: 0 0 40px
     width: 100%
+
     &:last-child
       margin: 0
+
   .nav-link
     width: 100%
 
 .posters-slider
   .slick-slide
     margin: 0 30px 0 0
+
   .slick-prev
     display: none !important
+
   .slick-next
     right: 33px
     top: 33%
 
 .poster-item
   max-width: 180px
+
   &__img
     display: flex
     align-items: center
@@ -339,10 +386,13 @@
     border-radius: 10px
     height: 267px
     overflow: hidden
+
     img
       width: 100%
+
   &__name
     color: #000
+
     &:hover
       color: #FD5200
 
@@ -358,6 +408,7 @@
 .entertainment-kids-content
   max-width: 523px
   width: 100%
+
   h3
     margin: 0 0 20px
     font-size: 32px
@@ -367,6 +418,7 @@
 .entertainment-kids-images
   width: calc(100% - 523px)
   padding: 0 83px
+
   &__img
     width: 100%
     height: 814px
@@ -375,6 +427,7 @@
     justify-content: center
     border-radius: 20px
     overflow: hidden
+
     img
       width: 100%
       height: 100%
@@ -386,6 +439,7 @@
 .shops
   padding: 76px 0 46px
   margin: 0 0 58px
+
   h2
     margin: 0
     color: #fff
@@ -403,9 +457,11 @@
   font-size: 14px
   display: flex
   flex-direction: column
+
   &__body
     padding: 0 20px 20px
     border-bottom: 1px solid #FFCB05
+
   &__footer
     display: flex
     align-items: center
@@ -415,16 +471,19 @@
     padding: 15px 20px
     font-weight: bold
     margin: auto 0 0
+
   &__img
     width: 100%
     height: 220px
     border-radius: 5px
     position: relative
+
     img
       border-radius: 5px
       width: 100%
       height: 100%
       object-fit: cover
+
   &__logo
     position: absolute
     right: 0
@@ -432,17 +491,20 @@
     border-radius: 5px
     width: 70px
     height: 70px
+
   &__head
     margin: 13px 0 12px
     padding: 0 70px 0 0
     width: 100%
     color: #F3991F
+
   &__title
     margin: 0 0 8px
     text-transform: uppercase
     color: #000
     font-size: 20px
     font-weight: 800
+
   .box-text
     color: #606060
     line-height: 17px
@@ -451,16 +513,19 @@
 
 .btn-toggle
   margin: 40px auto 0
+
   img
     margin: 0 0 0 10px
 
 .shops-maps
   display: none
+
   &__scheme
     width: 100%
     display: flex
     align-items: center
     justify-content: center
+
     img
       width: 100%
       height: 100%
@@ -475,10 +540,13 @@
 
 .nav-tabs-there
   max-width: none
+
   .nav-item
     margin: 0 0 30px
+
     &:last-child
       margin: 0
+
   .nav-link
     display: flex
     align-items: center
@@ -486,6 +554,7 @@
     padding: 14px
     font-size: 16px
     color: #626262
+
     img
       margin: 0 10px 0 0
 
@@ -496,14 +565,18 @@
 .there-slider
   padding: 0 54px
   max-width: calc(100% - 31px)
+
   .slick-track
     display: flex
     align-items: stretch
+
   .slick-slide
     height: auto
     margin: 0 20px 30px
+
   .slick-disabled
     opacity: 0
+
   .slick-arrow
     top: 35%
 
@@ -541,6 +614,7 @@
 
   &:last-child
     margin: 0
+
   p
     color: #FD5200
 
@@ -566,6 +640,7 @@
   margin: 0 0 94px
   width: 100%
   height: 681px
+
   img
     width: 100%
     height: 100%
@@ -585,6 +660,7 @@
 .logo-company
   max-width: 330px
   width: 100%
+
   img
     width: 100%
 
@@ -598,9 +674,11 @@
   -webkit-background-clip: text
   background-clip: text
   text-fill-color: transparent
+
   span
     display: block
     max-width: 412px
+
   p
     font-size: 128px
     line-height: 156px
@@ -617,11 +695,13 @@
   border-radius: 20px
   padding: 35px 40px 27px 23px
   transition: .3s ease
+
   p
     text-transform: uppercase
     font-size: 20px
     font-weight: bold
     margin: 0 0 23px
+
   &:hover
     background: #009746
 
