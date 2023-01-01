@@ -121,3 +121,8 @@ $('.btn-scheme').on('click', function (e) {
     }
 });
 // show list all
+
+$("[data-fancybox]").fancybox({
+    autoPlay : true, //  slideshow will start after opening the first gallery item
+    playSpeed : 3000 // 3sec pause between changing next item
+});
